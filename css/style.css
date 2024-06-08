@@ -1,0 +1,339 @@
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family:"Noto Sans" ;
+    line-height: 1.5;
+    font-size: 16px;
+}
+a {
+	text-decoration: none;
+}
+.cocontainer{
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 0 12px 0 12px;
+}
+header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #fff;
+    z-index: 1000;
+    border-bottom: 1px solid #ebebeb;
+}
+.header-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 96px;
+    position: relative;
+}
+.header-content img{
+    position: absolute;
+    top: 28px;
+    left: 0;
+}
+.menu{
+    display: flex;
+    align-items: center;
+    gap:40px; 
+}
+.menu a li{
+    color: #000000;
+}
+.menu-item{
+    display: flex;
+    position: relative;
+    width: 100px;
+    height: 32px;
+    justify-content: center;
+    align-items: center;
+    padding-top: 7px;
+}
+.menu-icon a:hover ::before,.menu-icon a:hover ::after{
+    position: absolute;
+    content: "";
+    width: 10px;
+    height: 10px;
+    display: block;
+    top: 0;
+    -webkit-box-reflect: below 16px;
+}
+.menu-icon a:hover ::before{
+    left: 0;
+    border-top: 1px solid #000;
+    border-left: 1px solid #000;
+}
+.menu-icon a:hover ::after{
+    right: 0;
+    border-top: 1px solid #000;
+    border-right: 1px solid #000;
+    
+}
+.menu-group{
+    display: none;
+}
+.text{
+    margin-top: 96px;
+    background-color: #FAFAFA;
+    height: 460px;
+}
+.text-content{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #FAFAFA;
+    text-align: center;
+}
+.text-a{
+    width: 100%;
+    font-size: 24px;
+    height: 74px;
+    margin-top: 139px;
+    margin-bottom: 83px;
+}
+.text-b {
+    max-width: 235px;
+    margin-right: 40px;
+    height: 84px;
+    color: #5B5B5B;
+}
+.text-c {
+    max-width: 235px;
+    color: #5B5B5B;
+}
+.text-content h6 {
+    margin: 12px;
+    margin-bottom: 12px;
+    position: relative;
+}
+.text-content h6::after {
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    left: 50%;
+    width: 24px;
+    height: 2px;
+    background-color: #C1C1C1;
+    transform: translateX(-50%);
+}
+.card-group{
+    display: flex;
+    margin-top: 40px;
+    max-width: 1296px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    /* padding: 0 12px 0 12px; */
+}
+.card{
+    margin-top: 80px;
+    width: calc(50% - 12px);
+    /* margin: 0 auto; */
+}
+.card img{
+    border-radius: 10px;
+    max-width: 100%;
+} 
+.card-text{
+    padding: 16px 0 0 16px;
+}
+.card-text h3{
+    font-size: 28px;
+    color: #3B3B3B;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+.card-text p{
+    font-size: 16px;
+    color: #919191;
+}
+.card-icon{
+    display: flex;
+    margin-top: 24px;
+    height: 32px;
+    gap: 16px;
+}
+.card-icon li{
+    border-radius: 20px;
+    padding: 4px 12px 4px 12px;
+    background-color: #F1F1F1;
+}
+.tab{
+    width: 152px;
+    display: flex;
+    margin-top: 72px;
+    margin-bottom: 120px;
+    align-items: center;
+    justify-content: space-between;
+}
+.tab a{
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    color: #000000;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tab a:hover{
+    color: #fff;
+    background-color: #000000;
+}
+.footer{
+    max-width: 100%;
+    height: 424px;
+    background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/footer-bg-lg.png?raw=true);
+    background-size:cover;
+    background-position: center;
+}
+.footer-inner{
+    display: flex;
+    justify-content: space-between;
+    max-width:  1296px;
+}
+.icon-group{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 80px;
+    /* margin-left: 312px; */
+    height: 264px;
+}
+.footer-icon{
+    display: flex; 
+    width: 306px;
+    height: 72px;
+    background-color: #fff;
+    border: 1px solid #C1C1C1;
+    color: #3B3B3B;
+    font-size: 20px;
+    align-items: center;
+    padding-left: 24px;
+    border-radius: 10px;
+}
+.hover{
+    background-color: #000000;
+    color: #ffffff;
+}
+.footer-icon svg{
+    fill:#117cff;
+}
+.footer-text img{
+    margin-top: 119px;
+    width: 120px;
+}
+.footer-text h6{
+    margin-top: 24px;
+    font-size: 2opx;
+}
+.footer-text p{
+    margin-top: 24px;
+    font-size: 2opx;
+    color: #919191;
+}
+
+@media screen and (max-width:767px) {
+    .cocontainer{
+        max-width: 100%;
+    }
+    .header-content{
+        height: 56px;
+        display: block;
+        position: relative;
+    } 
+    .header-content img{
+        top: 11.5px;
+        /* width: 74px; */
+    }
+    .menu{
+        position: absolute;
+        flex-direction: column;
+        margin-top:57px ;
+        padding-top: 44px;
+        padding-bottom: 44px;
+        gap:28px;
+        width: 100%;
+        background-color: #fff;
+    }
+    .close{
+        display: none;
+    }
+    .menu-group{
+        display: block;
+        position: absolute;
+        top: 8px;
+        right: 12px;
+        width: 40px;
+        height: 40px;
+    }
+    .text{
+        height: 540px;
+        margin-top: 56px;
+    }
+    .text-content{
+        flex-direction: column;
+        align-items: center;
+    }
+    .text-a{
+        font-size: 20px;
+        height: 128px;
+        width: 300px;
+        margin-top: 104px;
+        margin-bottom: 40px;
+    }
+    .text-b {
+        width: 100%;
+        width: 235px;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    .text-c {
+        width: 100%;
+        width: 235px;
+    }
+    .card-group{
+        width: 100%;
+        /* flex-direction: column; */
+    }
+    .card{
+        width:100%;
+    }
+    .card img{
+        width:737px; 
+        /* 圖片寬度有問題 */
+    }
+    .footer{
+        background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/footer-bg-sm.png?raw=true);
+        height: 538px;
+    }
+    .icon-group{
+        display: flex;
+        flex-direction: column;
+        margin-top: 40px;
+        margin-left: 34.5px;
+        height: 240px;
+    }
+    .footer-inner{
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-icon{
+        width: 306px;
+        height: 64px;
+        font-size: 20px;
+    }
+    .footer-text img{
+        margin-top: 40px;
+        width: 120px;
+    }
+    .footer-text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+}
